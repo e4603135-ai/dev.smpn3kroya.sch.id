@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SUBDOMAIN TAKEOVER</title>
+    <title>Domain Takeover</title>
     <style>
-        body { background: #0a0a0a; color: #00ff00; font-family: monospace; text-align: center; padding: 50px; }
+        body {
+            background: #000;
+            color: #00ff00;
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .box {
+            border: 2px solid #ff0000;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            background: #0a0a0a;
+        }
         h1 { color: #ff0000; font-size: 3em; }
-        .box { border: 2px solid #00ff00; padding: 30px; border-radius: 10px; background: #111; max-width: 600px; margin: auto; }
-        .status { color: #ff0000; font-weight: bold; font-size: 1.5em; }
+        .sub { color: #ff8800; font-size: 1.5em; }
+        .status { color: #ff0000; animation: blink 1s infinite; }
+        @keyframes blink {
+            50% { opacity: 0.2; }
+        }
     </style>
 </head>
 <body>
     <div class="box">
-        <h1>🔥 SUBDOMAIN TAKEOVER 🔥</h1>
-        <h2>dev.smpn3kroya.sch.id</h2>
-        <p class="status">⚡ COMPROMISED ⚡</p>
-        <p>Found by: Nexus Security Research</p>
-        <p>Date: 2026-06-28</p>
-        <hr>
-        <p>This proves subdomain takeover vulnerability!</p>
+        <h1>⚠️ TAKEOVER ⚠️</h1>
+        <div class="sub">dev.smpn3kroya.sch.id</div>
+        <div class="status">This domain has been compromised</div>
     </div>
 </body>
 </html>
